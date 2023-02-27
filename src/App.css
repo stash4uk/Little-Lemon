@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.navLink {
+  margin-inline: 2em;
+}
+
+.heroTitle {
+  color: #f4ce14;
+}
+
+.heroContent {
+  color: white;
+}
