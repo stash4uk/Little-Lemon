@@ -6,6 +6,7 @@ function Hero() {
         // flexWrap: "wrap",
         justifyContent: "space-around",
         backgroundColor: "#495E57",
+        marginBottom: "8em",
       }}
     >
       <section

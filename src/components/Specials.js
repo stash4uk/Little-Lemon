@@ -137,11 +137,6 @@ function Specials() {
             ingredient has been sourced and is as authentic as can be imagined.
           </p>
           <h5 style={{ paddingInline: "1em" }}>Order a delivery</h5>
-          <img
-            src={require("../icons_assets/Dish icon.svg").default}
-            alt="Little Lemon Logo"
-            width={"5%"}
-          />
         </article>
       </section>
     </div>

@@ -4,19 +4,24 @@ function Footer() {
       style={{
         display: "flex",
         justifyContent: "space-evenly",
-        flexWrap: "wrap",
-        paddingInline: "5%",
+        // flexWrap: "wrap",
+        paddingInline: "15%",
+        paddingBlock: "5%",
+        backgroundColor: "#495E57",
       }}
     >
+      <img
+        src={require("../icons_assets/restauranfood.jpg")}
+        alt="Footer Logo"
+        width={"20%"}
+        style={{
+          clipPath: "inset(0 0 0 0 round 16px)",
+        }}
+      />
+      <div className="footerBlock"></div>
       <div className="footerBlock">
-        <img
-          src={require("../icons_assets/Logo.svg").default}
-          alt="Footer Logo"
-        />
-      </div>
-      <div className="footerBlock">
-        <h3>Doormat Navigation</h3>
-        <ul>
+        <h3 className="heroTitle">Doormat Navigation</h3>
+        <ul className="heroContent" style={{ listStyle: "none", padding: "0" }}>
           <li>Home</li>
           <li>About</li>
           <li>Menu</li>
@@ -26,16 +31,16 @@ function Footer() {
         </ul>
       </div>
       <div className="footerBlock">
-        <h3>Contact</h3>
-        <ul>
+        <h3 className="heroTitle">Contact</h3>
+        <ul className="heroContent" style={{ listStyle: "none", padding: "0" }}>
           <li>Address</li>
           <li>Phone Number</li>
           <li>Email</li>
         </ul>
       </div>
       <div className="footerBlock">
-        <h3>Social Media Links</h3>
-        <ul>
+        <h3 className="heroTitle">Social Media Links</h3>
+        <ul className="heroContent" style={{ listStyle: "none", padding: "0" }}>
           <li>Facebook</li>
           <li>Instagram</li>
           <li>Twitter</li>
