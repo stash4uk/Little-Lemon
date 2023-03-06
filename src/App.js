@@ -1,19 +1,18 @@
 import "./App.css";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Specials from "./components/Specials";
-import Testimonials from "./components/Testimonials";
-import Chicago from "./components/Chicago";
+import Main from "./components/Main";
 import Footer from "./components/Footer";
+import OrderOnline from "./components/OrderOnline";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Specials />
-      <Testimonials />
-      <Chicago />
+      <Routes>
+        <Route path="/" element={<Main />}></Route>
+        <Route path="/order-online" element={<OrderOnline />}></Route>
+      </Routes>
       <Footer />
     </>
   );

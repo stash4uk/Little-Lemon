@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div
@@ -22,11 +23,11 @@ function Footer() {
       <div className="footerBlock">
         <h3 className="heroTitle">Doormat Navigation</h3>
         <ul className="heroContent" style={{ listStyle: "none", padding: "0" }}>
-          <li>Home</li>
+          <Link to="/">Home</Link>
           <li>About</li>
           <li>Menu</li>
           <li>Reservations</li>
-          <li>Order Online</li>
+          <Link to="/order-online">Order Online</Link>
           <li>Login</li>
         </ul>
       </div>

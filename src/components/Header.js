@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <menu
@@ -19,12 +21,24 @@ function Header() {
           listStyle: "none",
         }}
       >
-        <li className="navLink">Home</li>
-        <li className="navLink">About</li>
-        <li className="navLink">Menu</li>
-        <li className="navLink">Reservations</li>
-        <li className="navLink">Order Online</li>
-        <li className="navLink">Login</li>
+        <Link to="/" className="navLink">
+          Home
+        </Link>
+        <Link to="/about" className="navLink">
+          About
+        </Link>
+        <Link to="/menu" className="navLink">
+          Menu
+        </Link>
+        <Link to="/reservations" className="navLink">
+          Reservations
+        </Link>
+        <Link to="/order-online" className="navLink">
+          Order Online
+        </Link>
+        <Link to="/login" className="navLink">
+          Login
+        </Link>
       </ul>
     </menu>
   );
